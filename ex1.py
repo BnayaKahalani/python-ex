@@ -16,3 +16,12 @@ Output:
 The entered string is symmetrical
 The entered string is palindrome'''
 
+def str_check(str):
+  mid = len(str) // 2
+  if str[:mid] == str[mid:]:
+    print("true")
+  else:
+    print("false")
+    
+str_check("amaama")
+  
