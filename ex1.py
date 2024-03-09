@@ -19,9 +19,10 @@ The entered string is palindrome'''
 def str_check(str):
   mid = len(str) // 2
   if str[:mid] == str[mid:]:
-    print("true")
+    print(f"{str} is symmetrical")
   else:
-    print("false")
+    print(f"{str} is asymmetrical")
+
     
 str_check("amaama")
   
