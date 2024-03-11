@@ -16,17 +16,22 @@ Output:
 The entered string is symmetrical
 The entered string is palindrome'''
 
-def check_symmetrical_palindrome(str):
-    if str == str[::-1]:
-        print("The entered string is symmetrical")
-    else:
-        print("The entered string is not symmetrical")
+string = 'khokho'
+half = int(len(string) / 2)
+ 
+ 
+first_str = string[:half]
+second_str = string[half:]
+ 
+ 
+if first_str == second_str:
+    print(string, 'string is symmetrical')
+else:
+    print(string, 'string is not symmetrical')
+ 
 
-    if str == str[::-1]:
-        print("The entered string is palindrome")
-    else:
-        print("The entered string is not palindrome")
-
-check_symmetrical_palindrome("khokho")
-check_symmetrical_palindrome("amaama")
+if first_str == second_str[::-1]: 
+    print(string, 'string is palindrome')
+else:
+    print(string, 'string is not palindrome')
   
