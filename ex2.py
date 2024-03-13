@@ -8,3 +8,10 @@
 # output : str= laxmi is name my 
 
 # Reverse the words in the given string program 
+
+def reverse(str):
+  splitted_str = str.strip().split()
+  reversed_str = " ".join(splitted_str[::-1])
+  print(reversed_str)
+  
+reverse("my name is laxmi")
