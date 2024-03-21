@@ -7,3 +7,9 @@
 # Output : appLES 
 # Explanation : Latter half of string is uppercased.
 
+def later_upper(str):
+  mid = len(str)//2
+  res = str[:mid]+str[mid:].upper()
+  print(res)
+  
+later_upper('apples')
