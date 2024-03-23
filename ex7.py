@@ -8,3 +8,16 @@
 
 # Input: welcome to geeksforgeeks
 # Output: WelcomE TO GeeksforgeekS
+
+def capitalize_first_last(str):
+  splitted = str.split()
+  capitalized = []
+  for word in splitted:
+    word = word.capitalize()
+    word = word[:len(word)-1] + word[-1].upper()
+    capitalized.append(word)
+  res = " ".join(capitalized)
+  print(res)
+    
+  
+capitalize_first_last("welcome to geeksforgeeks")
