@@ -8,3 +8,9 @@
 
 # Input: stringwithoutnum
 # Output: False
+
+def find_letter_number(str):
+  if str.isalpha():
+    print("True")
+    
+find_letter_number("welcome2ourcountry34")
