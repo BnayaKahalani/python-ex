@@ -10,7 +10,17 @@
 # Output: False
 
 def find_letter_number(str):
-  if str.isalpha():
-    print("True")
+  flag_l = False
+  flag_n = False
+
+  for i in str:
+
+    if i.isalpha():
+      flag_l = True
+      
+    if i.isdigit():
+      flag_n = True
+
+  print(f"{flag_l and flag_n}")
     
 find_letter_number("welcome2ourcountry34")
