@@ -12,3 +12,9 @@
 # Output : Accepted
 # All vowels are present
 
+def every_vowel(str):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    res = all(char.lower() in str.lower() for char in vowels)
+    print("Accepted") if res == True else print("Not accepted")
+
+every_vowel("ABeeIghiObhkUul")
