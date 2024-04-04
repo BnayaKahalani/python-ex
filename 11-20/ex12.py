@@ -4,3 +4,13 @@
 # Input : geeksforgeeks 
 # Output : geksf
 
+def remove_duplicates(str):
+  res = []
+  for char in str:
+    if char in res:
+      continue
+    else:
+      res.append(char)
+  print("".join(res))
+  
+remove_duplicates("geeksforgeeks")
