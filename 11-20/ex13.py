@@ -7,3 +7,16 @@
 # Input : test_list = [“geeksforgeeks”], chr_list = [‘e’, ‘g’] 
 # Output : {‘g’: 2, ‘e’: 4} 
 # Explanation : Frequency of certain characters extracted.
+
+def char_freq(test_list, char_list):
+  res = {}
+  for char in char_list:
+    if char in test_list:
+      if char in res.keys():
+        res[char] += 1
+      else:
+        res[char] = 1
+  print(res)
+  
+char_freq("geeksforgeeks is best for geeks", ["e", "b", "g", "f"])
+  
