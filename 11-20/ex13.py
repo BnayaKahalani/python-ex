@@ -10,13 +10,11 @@
 
 def char_freq(test_list, char_list):
   res = {}
-  for char in char_list:
-    if char in test_list:
-      if char in res.keys():
-        res[char] += 1
-      else:
-        res[char] = 1
-  print(res)
+  
+  for char in test_list:
+    if char in char_list:
+      res[char] = res.get(char, 0) + 1
+  print (res)
   
 char_freq("geeksforgeeks is best for geeks", ["e", "b", "g", "f"])
   
