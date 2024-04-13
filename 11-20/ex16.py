@@ -13,3 +13,12 @@
 #         k = 3
 # Output : string python 
 
+def find_words(str, k):
+  l = str.split()
+  res = []
+  for word in l:
+    if len(word) > k:
+      res.append(word)
+  print(" ".join(res))
+  
+find_words("string is fun in python", 3)
