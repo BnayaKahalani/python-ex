@@ -13,3 +13,9 @@
 #         i = 4
 # Output : Pete
 
+def remove_idx(str, i):
+    a = str[:i] 
+    b = str[i + 1:] 
+    print(a + b) 
+    
+remove_idx("Geek", 1)
