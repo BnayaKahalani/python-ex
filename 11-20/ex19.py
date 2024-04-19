@@ -5,3 +5,14 @@
 #                   'peach', 'puppy'], 
 #           input = 'appel'
 # Output : ['apple', 'ape']
+
+from difflib import get_close_matches
+
+def closeMatches(patterns, word):
+     print(get_close_matches(word, patterns))
+     
+word = 'appel'
+patterns = ['ape', 'apple', 'peach', 'puppy']
+closeMatches(['ape', 'apple', 'peach', 'puppy'], 'appel')
+     
+     
