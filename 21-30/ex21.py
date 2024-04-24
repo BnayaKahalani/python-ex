@@ -7,13 +7,17 @@
 
 def replace_commas(str):
   result = ""
-  for char in str:
-      if char == ', ':
+  i = 0
+  while i < len(str):
+      if str[i] == ',':
           result += '.'
-      elif char == '.':
+      elif str[i] == '.':
           result += ', '
       else:
-          result += char
+          result += str[i]
+      if i < len(str) - 1 and str[i + 1] == ' ':
+          i += 1
+      i += 1
   print(result)
 
 replace_commas("14, 625, 498.002")
