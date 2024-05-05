@@ -15,3 +15,25 @@
 # Output : No
 # Explanation : In the string it is not possible to make the
 #               string empty in any possible manner.
+
+def checkEmpty(str, pattern):
+	
+	if len(str)== 0 and len(pattern)== 0:
+		return 'true'
+
+	if len(pattern)== 0:
+		return 'false'
+
+	while (len(str) != 0):
+
+		index = str.find(pattern)
+
+		if (index ==(-1)):
+			return 'false'
+
+		str = str[0:index] + str[index + len(pattern):]		 
+	return 'true'
+
+str ='GEEGEEKSKS'
+pattern ='GEEKS'
+print(checkEmpty(str, pattern))
