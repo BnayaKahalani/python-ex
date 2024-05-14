@@ -11,3 +11,4 @@ def print_freq(test_str):
   print("The words frequency : " + str(res))
   
 print_freq('Gfg is best . Geeks are good and Geeks like Gfg')
+
